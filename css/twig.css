@@ -1,0 +1,257 @@
+#main_body {margin:auto; width:1200px; height:100%;}
+#left_column {background-color:#ddd; float:left; height:100%; width:399px; border-right:1px solid #ccc; overflow:hidden; z-index:3;}
+#right_column {background-color:#eee; float:left; height:100%; width:800px; overflow:auto; z-index:2;}
+
+#folders_list {width:100%; border-bottom:1px solid #eee; overflow:auto;}
+#current_folder {width:370px; padding:10px; text-overflow:ellipsis; font-size:16px; color:#3830D1; text-shadow:#fff 0px 1px; cursor:pointer;}
+#set_folder, #copyto_folder, #moveto_folder {font-size:10px; overflow:auto; height:50%;}
+#set_folder {height:500px;}
+#copyto_folder, #moveto_folder {margin-left:10px; border-radius:5px; width:290px; background-color:#fff; clear:left;}
+#folders_list:hover {background-color:#ccc;}
+div.subfolders {padding-left:1em;}
+#set_folder img, #copyto_folder img, #moveto_folder img {padding-right:10px; padding-left:10px; cursor:pointer;}
+div.foldername {font-size:12px; padding-bottom:.5em;}
+span.foldername {cursor:pointer; color:#3830D1;}
+
+#email_list {width:396px; height:100%; margin:0 3px 0 3px; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+#email_list div:last-child {margin-bottom:50px;}
+div.message {width:398px; border-bottom:1px solid #eee; text-shadow:#eee 0px 1px; display:block; height:60px; cursor:pointer;}
+div.email_read {float:left; width:4px; margin:3px 0 3px 0; height:54px;}
+div.unread div.email_read {background-color:#3830D1;}
+div.choosen {background-color:#ccc;}
+div.clear {float:left; clear:both; height:1px;}
+div.email_check {float:left; height:39px; margin:10px 5px 0 3px;}
+div.email_name {float:left; width:220px; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; font-size:13px; font-weight:bold; margin:13px 0 0px 0;}
+div.email_date {float:right; width:90px; margin-top:12px;}
+div.email_flag {float:right; width:25px; font-size:16px;}
+div.flagged div.email_flag {color:#000; visibility:visible;}
+div.unflagged div.email_flag {visibility:hidden;}
+div.email_subject {font-size:12px; float:left; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; width:320px;}
+
+iframe.email_viewer_frame {border:0; margin:0; padding:0; width:800px; height:99%; z-index:3; position:relative;}
+
+#default_actions, #selected_actions, #email_viewer {width:100%; height:100%; overflow:auto; -webkit-overflow-scrolling:touch;}
+#email_viewer {background-color:#fff;}
+#email_writer {background-color:#eee;}
+div.act_title {font-family:'Open Sans', 'Sans-Serif'; font-weight:300; color:#333; font-size:24px; text-shadow:#fff 0px 1px; margin:3% 0 0 40px; line-height:25px; float:left; width:300px; clear:left;}
+#default_actions div.act_title {padding-bottom:5px;}
+#folder_details {font-size:12px; margin-left:40px; margin-bottom:20px; color:#888; float:left; width:300px; clear:left;}
+#num_emails_selected {margin-bottom:20px;}
+#default_options div.act_link, #selected_options div.act_link {font-size:13px; margin:0 0 10px 40px; color:#3830D1; float:left; width:300px; clear:left; text-shadow:#fff 0 1px;}
+#weather_info {float:left; clear:left; margin:30px 0 0 40px; width:300px;}
+#default_options div.act_subtitle {float:left; clear:left; margin-top:2em; font-weight:100; margin:20px 0 10px 40px; font-size:14px; color:#888;}
+#search_emails_box {float:left; width:300px; clear:left; padding-bottom:20px;}
+div.act_link span {cursor:pointer;}
+div.act_link span.tnr {margin-left:5px; font-size:20px; color:#777; cursor:auto;}
+
+/* mail search */
+#search_emails_box div {padding-bottom:3px;}
+label.search_label {display:inline-block; width:70px; text-align:right; color:#999;}
+label.search-chkbx {width:140px; text-align:left;}
+#search_emails_box input[type=text] {width:220px; border:0; border-radius:5px; padding:3px; background-color:#fff;}
+#search_emails_box input[type=text]:-moz-placeholder {color:#aaa;}
+
+/* mail compose (new email) */
+div.eheaderkey {float:left; width:75px; margin:0; text-align:right; font-weight:bold;}
+div.erespheader {padding-top:10px; margin-bottom:10px; border-bottom:1px solid #ddd; background-color:#fff;}
+div.eheadervalue {float:left; margin-left:5px; width:650px; text-align:left;}
+div.headerspace {clear:both; height:10px;}
+div.eheadervalue span.eactions {margin-right:20px; color:#0000cd; cursor:pointer;}
+div.eheadervalue span.sendemail {font-size:14px; font-weight:bold;}
+div.eheadervalue span.cancelemail {font-size:14px; font-weight:bold;}
+div.eheadervalue select {font-size:12px;}
+textarea.email_body, textarea.text_email_body {width:746px; border:1px solid #ddd; margin:0; margin-bottom:20px; margin-left:20px; font-size:12px; background-color:#fff;}
+input.toemails, input.ccemails, input.bccemails, input.emailsubject {width:700px; border:0; border-bottom:1px solid #eee; margin-top:0; font-size:12px; background-color:#fff;}
+
+/* mail folder */
+#change_folder_box {z-index:11; position:absolute; width:340px; top:50px; left:50%; margin-left:-150px;}
+#change_folder_input_box {border-top-left-radius:5px; border-top-right-radius:5px; background-color:#fff; text-align:center; width:300px; padding:20px; border:1px solid #ccc; border-bottom:0;}
+#change_folder_input_box input[type=text] {background-color:#fff; font-size:14px; border:1px solid #eee; width:300px;}
+#change_folder_list_box {border-bottom-left-radius:5px; border-bottom-right-radius:5px; background-color:#eee; float:left; width:300px; padding:20px; border:1px solid #ccc; border-top:0;}
+div.change_folder_line {padding:5px; width:300px; display:block; border-bottom:1px solid #ddd;}
+span.prnt_folder, span.prnt_folder_sep {color:#999;}
+span.prnt_folder {font-size:12px;}
+span.prnt_folder_sep {font-family:"Times New Roman", Serif; font-size:18px;}
+div.change_folder_line span.folder {font-size:12px; font-weight:bold;}
+
+/* autosuggest */
+div.autosuggest_box {border:0; border-bottom:1px solid #eee; padding-top:0;}
+div.suggestions_box {border:1px solid #aaa; background-color:#eee; position:absolute; padding:5px; border-radius:5px; z-index:12;}
+span.autosuggest_bit {
+    font-size:12px;
+    cursor:text;
+    background-color:#dee7f8;
+    color:#333;
+    border:1px solid #cad8f3;
+    border-radius:9px;
+    padding:0 4px 2px 4px;
+    display:inline-block;
+	margin-bottom:3px;
+}
+span.selected_bit { background-color:#cad8f3; }
+span.autosuggest_spacer { background-color:#fff; }
+span.autosuggest_spacer:hover { background-color:#aaa; }
+input.autosuggest_blank { background-color:#fff; color:#999; border:0; margin-left:5px; }
+span.autosuggest_bit_close { font-size:16px; font-weight:bold; cursor:pointer; color:#999; margin-left:4px; }
+span.autosuggest_bit_close:hover { color:#000; }
+div.as_suggestion { background-color:#eee; padding:5px; cursor:pointer; white-space:nowrap;}
+div.as_selsug { background-color:#dee7f8; }
+div.as_notice { background-color:#ccc; padding:5px; }
+
+/* contacts/notes */
+#contacts_box {z-index:11; position:absolute; width:700px; top:5%; left:50%; margin-left:-350px; height:90%; border-radius:5px; overflow:hidden; background-color:#eee; padding:0;}
+
+div.contacts_search {float:left; width:200px; border-right:1px solid #bbb; background-color:#ccc; color:#333; height:100%; padding:0px 10px;}
+#contacts_filter_title, #notes_filter_title {font-size:16px; text-align:center; text-shadow:#eee 0px 1px; padding:20px 0;}
+#contacts_list {float:left; width:475px; height:90%; margin-top:5%; overflow-y:auto; overflow-x:hidden; border-top:1px solid #ddd; -webkit-overflow-scrolling:touch;}
+#contacts_list div.contact, #contacts_list div.contact_open {color:#555; padding:10px; border-bottom:1px solid #ddd;}
+#contacts_list div.contact_open {background-color:#fff;}
+#contacts_new_link {color:#3830D1; font-size:18px; text-shadow:#fff 0px 1px; cursor:pointer;}
+#contacts_filter_title {text-align:left; display:inline-block; padding:12px 0 12px 10px; padding-right:5px;}
+#contacts_filter_title {padding-left:0;}
+
+div.contacts_search label {color:#999; margin-right:5px; display:inline-block; text-align:right; width:70px;}
+div.contacts_search input[type=text], div.notes_search input[type=text] {background-color:#eee; width:200px; padding:3px; border:0; border-radius:5px; font-size:12px; margin-bottom:5px;}
+div.notes_search input[type=text] {margin-bottom:0;}
+div.contacts_search input[type=text]:-moz-placeholder, div.notes_search input[type=text]:-moz-placeholder {color:#aaa;}
+ 
+div.contact span, div.contact a {margin-left:5px;}
+div.contact span.nickname {color:#999;}
+div.contact span.company {margin-left:20px;}
+div.contact div.section {margin-top:10px;}
+div.contact div.section.basic {margin-top:0;}
+div.addresses a.address {color:#555;}
+div.addresses a.address:hover {color:#3830D1;} 
+input.fakelink {font-family:inherit; background-color:inherit; color:#5d5dfa; margin:0 padding:0; border:0; font-weight:bold; cursor:pointer; margin-top:5px;}
+
+div.contact_open input[type=text] {background-color:#fff; border:0; border-bottom:1px solid #eee; color:#555; font-size:12px;}
+div.contact_open input[type=text]:-moz-placeholder {color:#aaa;}
+div.contact_open div.commandbar {display:block; text-align:center; margin-top:15px;}
+div.contact_open span {margin-right:5px;}
+div.contact_open div.section {margin-bottom:10px;}
+div.contact_open input.firstname, div.contact_open input.lastname {font-size:14px; font-weight:bold; width:20%; margin-right:5px;}
+div.contact_open input.lastname {width:25%;}
+div.contact_open input.nickname {width:15%; margin-right:5px;}
+div.contact_open div.contact_subtitle {font-size:12px; font-weight:bold; margin:10px 0 5px 3px; border-top:1px solid #fff; padding-top:5px;}
+div.contact_open input.company {width:32%;}
+div.contact_subtitle input.fakelink {font-size:13px;}
+div.contact_open div.address {margin-bottom:5px;}
+div.contact_open input.email {width:70%;}
+div.contact_open input.number {width:30%; margin-right:5px;}
+div.contact_open input.number_type {width:20%;}
+div.contact_open input.im {width:50%; margin-right:5px;}
+div.contact_open input.im_type {width:20%;}
+div.contact_open input.address {width:70%; margin-right:5px;}
+div.contact_open input.address_type {width:20%;}
+
+/* notes */
+#notes_box {z-index:11; position:absolute; width:700px; top:5%; left:50%; margin-left:-350px; height:90%; border-radius:5px; overflow:hidden; background-color:#eee; padding:0;}
+#notes_new_link {color:#3830D1; font-size:18px; text-shadow:#fff 0px 1px; padding-right:20px; cursor:pointer;}
+#notes_filter_title {text-align:left; display:inline-block; padding:12px 0 12px 10px; padding-right:5px;}
+#notes_list {height:90%; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+#notes_list div.note:last-child {margin-bottom:10px;}
+div.notes_search {background-color:#ccc; border-top-left-radius:5px; border-top-right-radius:5px;}
+div.notes_search span.add_note {color:#3830D1;}
+
+div.notes_search input[type=text] {width:50%;}
+div.note, div.note_open {padding:10px; border-bottom:1px solid #ddd;}
+div.note {cursor:pointer;}
+div.note div.note_name, div.contact span.firstname, div.contact span.lastname {font-size:13px; color:#555; padding:0; display:inline-block; text-shadow:#fff 0px 1px;}
+div.note div.note_desc {color:#aaa; text-overflow:ellipsis; overflow:hidden; display:inline-block; padding-left:10px; white-space:nowrap; vertical-align:bottom;}
+
+div.note_open, div.note.selected {background-color:#fff;}
+div.note_open input.note_name {font-size:14px; background:#fff; border:0; padding:0; margin-bottom:10px; width:50%;}
+div.note_open textarea.note_desc {width:100%; border:0; background-color:#fff; color:#444; border-top:1px solid #ddd; padding-top:10px;}
+
+/* settings/help */
+#settings_box, #help_box {z-index:11; position:absolute; width:700px; top:5%; left:50%; margin-left:-350px; height:90%; border-radius:5px; background-color:#eee; padding:0;}
+div.scroller {margin:3% 0; overflow-x:hidden; overflow-y:auto; height:94%;}
+div.section_title {display:block; font-size:20px; color:#333; margin:20px; border-bottom:1px solid #ccc; padding-bottom:10px;}
+div.scroller div.first {margin-top:0;}
+#from_addr_list {margin-left:20px;}
+#from_addr_list td {padding-left:10px;}
+#from_addr_list tr.head td {font-weight:600; font-size:13px; text-shadow:#fff 0px 1px; padding-bottom:10px;}
+
+#settings_box input[type=password], #settings_box input[type=text] {border:1px solid #ddd; background-color:#fff; color;#555; margin-right:20px; padding:3px;}
+#settings_box input:-moz-placeholder {color:#aaa;}
+#settings_box input[type=password] {width:30%; margin:0;}
+#pref_newpass1 {margin:0 3% !important;}
+
+/*#settings_box.success {background-color:#a1d6a1;}*/
+#settings_box.success {background-color:#009933;}
+#settings_box.success div.settings_title {border-bottom:1px solid #a1d6a1;}
+div.settings_formbox {margin:0 20px 40px 20px;}
+#changepass_status {margin:5px 20px 0 20px; font-weight:bold; color:#ff6347;}
+div.weathersuggest_box {background-color:#fff; border:1px solid #ddd; padding:3px; border-radius:5px; margin:0; margin-bottom:3px;}
+div.weathersuggest_box input[type=text] {border:0 !important;}
+
+/* help */
+div.question, div.answer, div.shortcut_section {color:#555; margin:10px 20px 0 20px; font-size:12px; font-weight:600; clear:both;}
+div.answer {margin:5px 20px 20px 20px;}
+div.answer span.char, div.question span.char {display:none;}
+div.answer span.text, ul.text {font-size:12px; font-weight:400;}
+div.shortcut {color:#555; margin-left:20px; line-height:15px; float:left; width:300px; margin-bottom:3px;}
+div.long  {width:600px;}
+div.shortcut_section {clear:both; margin-bottom:10px; font-size:13px; text-shadow:#fff 0px 1px;}
+span.shortcut_key {font-size:12px; font-weight:600; margin-right:10px; text-shadow:#fff 0px 1px;}
+
+/* weather */
+#weather_box {z-index:11; position:absolute; width:90%; top:100px; left:5%; border-radius:5px; background-color:#eee;}
+#weather_info {color:#ccc;}
+#weather_info:hover {color:#777;}
+#weather_info:hover div.wicon img {opacity:1;}
+div.wicon {float:left; margin-right:5px;}
+div.wicon img {cursor:pointer; opacity:0.4;}
+div.weather_city {font-size:21px; line-height:21px;}
+div.weather_link {padding:10px; text-align:center;}
+div.forecast_details {margin:20px; margin-bottom:5px; overflow-x:auto; overflow-y:hidden;}
+div.forecast_days {width:1000px; height:20px; color:#999;}
+div.forecast_day {float:left; border-right:0 dotted #aaa; text-align:center; text-overflow:ellipsis;}
+div.forecast_container {width:1000px; padding-bottom:20px;}
+div.forecast_period {padding:0 10px; width:50px; display:table-cell; vertical-align:bottom; text-align:center; border-right:1px dotted #eee;}
+div.forecast_container div.endday {border-right:1px dotted #bbb;}
+div.forecast_period div.bar {position:relative; width:29px; background-color:#bbb; border-radius:3px;}
+div.forecast_period div.freezing {background-color:#bcd4dd;}
+div.forecast_period div.temperature {padding-top:5px; font-weight:bold; color:#555; text-shadow:#eee 0px 1px;}
+div.forecast_period div.precipitation {padding-top:5px; color:#777; text-shadow:#eee 0px 1px;}
+div.forecast_period div.time {color:#999;}
+span.weather_next {font-size:21px; margin-left:10px; cursor:pointer;}
+span.weather_desc {font-size:13px;}
+span.weather_temp {margin-left:10px; font-size:20px; font-weight:600;}
+span.weather_direction {font-size:12px;}
+span.weather_speed {margin-left:10px;}
+span.weather_precipitation {}
+
+/* tasks */
+#tasks_box {float:right; width:300px; background-color:#eee; color:#ccc; max-height:94%; margin:3% 40px 0 0; border-radius:5px; padding:5px; border:2px solid #eee; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch;}
+#tasks_box.focused {background-color:#fff !important; color:#777; border:2px solid #fff;}
+#tasks_box.success {border:2px solid #093 !important;}
+
+#no-tasks-box {padding:10px 0; text-align:center; font-size:22px; text-shadow:#fff 0px 1px; color:#ccc;}
+
+div.task-header {text-align:center; padding-bottom:5px; margin-bottom:5px;}
+span.task-date {font-size:16px; margin:0 20px;}
+span.task-next, span.task-prev {font-size:20px; cursor:pointer; color:#eee;}
+#tasks_box.focused span.task-next, #tasks_box.focused span.task-prev {color:#ccc;}
+
+input.task-text {width:280px; border:0; background-color:#eee; color:#aaa; padding:3px;}
+#tasks_box.focused input.task-text {background-color:#fff; color:#777}
+div.task.completed input.task-text {text-decoration:line-through !important;}
+div.task-links {text-align:right; display:none;}
+#tasks_box.focused div.task.selected div.task-links {display:block; margin-top:5px;}
+div.task-links span {font-size:17px; color:#3830D1; margin-right:15px; cursor:pointer;}
+
+input.new-task-button {background-color:#ddd; border-radius:5px; border:1px solid #ccc; padding:2px 7px; cursor:pointer;}
+#tasks_box.focused div.new-task-link {visibility:visible;}
+div.new-task-link {text-align:center; margin-top:10px; font-size:13px; visibility:hidden;}
+
+#tasks_box div.task {padding:5px; text-align:center;}
+div.task {border-bottom:1px dotted #ccc;}
+#tasks_box.focused div.task.selected {background-color:#eee;}
+div.task.success {background-color:#093 !important;}
+
+#tasks_actions {position:absolute; background-color:#ddd; padding:0 10px 5px 5px;}
+
+/* manage folders */
+#folders_box {z-index:11; position:absolute; width:700px; top:5%; left:50%; margin-left:-350px; height:90%; border-radius:5px; overflow:hidden; background-color:#eee; padding:0;}
+

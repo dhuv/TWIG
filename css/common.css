@@ -1,0 +1,37 @@
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment  {height:1px; display:none;}
+::-webkit-scrollbar-track-piece  {background-color: inherit; -webkit-border-radius: 2px;}
+::-webkit-scrollbar-thumb:vertical {height: 30px; background-color: inherit; border:2px solid #aaa; -webkit-border-radius: 4px;}
+
+html, body {padding:0; margin:0; width:100%; height:100%;}
+body.se {font-size:12px; line-height:16px; font-family:'Open Sans', 'Verdana', 'Sans-Serif'; font-weight:400; color:#000; background-color:#bbb;}
+/*body.se {font-size:12px; line-height:16px; font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Verdana', 'Sans-Serif'; font-weight:400; color:#000; background-color:#bbb;}*/
+form {padding:0; margin:0;}
+a {text-decoration:none; color:#3830D1;}
+
+input[type=text], input[type=password], textarea {color:#000; background-color:#ddd; border:1px solid #aaa; border-radius:3px; padding-left:3px;}
+.tnr {font-family:'Times New Roman', 'Sans-serif' !important;}
+.thick {font-weight:600;}
+.alignc {text-align:center;}
+.alignl {text-align:left;}
+.alignr {text-align:right;}
+
+/* menu related items */
+#dropmenudiv, .ddmenu {position:absolute; background-color:#eee; color:#444; border:1px solid #ddd; z-index:5; padding:0 10px 0 10px; border-radius:5px; top:10px; left:10px; font-size:12px;}
+#dropmenudiv a, .ddmenu a, div.ddlink {display:block; text-decoration:none; padding:10px; cursor:pointer; border-bottom:1px solid #ddd;}
+div.ddmenu div:last-child {border-bottom:0;}
+#dropmenudiv a:hover, .ddmenu a:hover, div.ddlink:hover {color:#000;}
+
+#coverall {background-color:#000; color:inherit; width:100%; height:100%; z-index:10; position:fixed; top:0; left:0; opacity:0.6; overflow:hidden;}
+div.iframe, div.coveriframe {background-color:#fff; color:inherit; border:1px solid #ddd; position:absolute; visibility:hidden; padding:20px; border-radius:5px;}
+
+.sfont {font-size:12px;}
+.mfont {font-size:14px;}
+.lfont {font-size:16px;}
+.xlfont {font-size:18px;}
+.xxlfont {font-size:20px;}
+.xxxlfont {font-size:24px;}
+
+span.xlink {font-family:'Verdana', 'Sans-Serif'; position:absolute; top:5px; right:5px; padding:5px; color:#3830D1; font-size:16px; cursor:pointer;}
+
+.scrollbar-measure { width: 100px; height: 100px; overflow: scroll; position: absolute; top: -9999px; }

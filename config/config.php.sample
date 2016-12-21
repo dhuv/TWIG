@@ -1,0 +1,33 @@
+<?
+
+define('SE\DB_SERVER', 'localhost');
+define('SE\DB_DBASE', 'twig4');
+define('SE\DB_USER', 'twig');
+define('SE\DB_PASS', 'twigpass');
+define('SE\DB_TYPE', 'mysql');
+define('SE\DB_CHARSET', 'utf8');
+
+define('SE\AUTH_DB_SERVER', 'localhost');
+define('SE\AUTH_DB_DBASE', 'authentication');
+define('SE\AUTH_DB_USER', 'auth');
+define('SE\AUTH_DB_PASS', 'authpass');
+define('SE\AUTH_DB_CHARSET', 'utf8');
+
+define('SE\FULL_URL', 'https://secure.tld/twig');
+define('SE\REL_URL', '/twig');
+define('SE\HTTPS_URL', 'https://secure.tld/twig');
+define('SE\LOGIN_URL', 'https://secure.tld/twig/login.php');
+define('SE\LOGOUT_URL', 'http://secure.tld/twig/');
+
+define('SE\BASE_DIR', '/var/www/apps/twig');
+define('SE\ERROR_LOG', '/var/log/php/twig.log');
+define('SE\APP_TITLE', 'TWIG');
+
+define('SE\SESS_DOMAIN', '.secure.tld');
+define('SE\SESS_PATH', '/');
+define('SE\SESS_LIFE', 0);
+
+define('SE\FROM_ADDR', 'admin@secure.tld');
+define('SE\FROM_NAME', 'TWIG Admin');
+
+?>
