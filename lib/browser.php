@@ -102,7 +102,7 @@ function getBrowserInfo($uastr=null) {
 	}
 
 	// find out if this is the latest
-	$latest_versions = ['Chrome'=>'51.0', 'Edge'=>'13.0', 'Firefox'=>'46.0', 'MSIE'=>'11.0', 'Opera'=>'12.0', 'Safari'=>'9.1', 'Unknown'=>'?'];
+	$latest_versions = ['Chrome'=>'56.0', 'Edge'=>'13.0', 'Firefox'=>'45.0', 'MSIE'=>'11.0', 'Opera'=>'12.0', 'Safari'=>'9.1', 'Unknown'=>'?'];
 	$min_versions = ['Chrome'=>'46.0', 'Edge'=>'13.0', 'Firefox'=>'40.0', 'MSIE'=>'11.0', 'Opera'=>'15.0', 'Safari'=>'8.0', 'Unknown'=>'?'];
 	$is_latest = ($version != '?' && isset($latest_versions[$ub]) && version_compare($version, $latest_versions[$ub]) >= 0);
 
