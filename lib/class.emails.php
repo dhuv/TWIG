@@ -221,6 +221,7 @@ class TWIGEmails {
 			}
 		}
                                   
+		/*
 		$patterns = array(chr(160), chr(194));
 		$replacements = array('', '');
 		$msgtext = str_replace($patterns, $replacements, $msgtext);
@@ -228,7 +229,9 @@ class TWIGEmails {
 		$patterns = array('<a href=', '<area ', chr(160), chr(194), chr(174), chr(226), chr(128), chr(153), chr(183));
 		$replacements = array('<a target="_new" href=', '<area target="_new" ', '', '', '', '', '', '', '');
 		$htmltext = str_replace($patterns, $replacements, $htmltext);
+		*/
 
+		/*
 		if (json_encode($msgtext)) {
 			$tmptext = '';
 			for ($i=0; $i<strlen($msgtext); $i++) {
@@ -244,6 +247,7 @@ class TWIGEmails {
 			}
 			$htmltext = $tmptext;
 		}
+		*/
 
 		$einfo['text'] = trim($msgtext);
 		$einfo['html'] = trim($htmltext);
