@@ -166,7 +166,7 @@ class TWIGEmails {
 		// put headers into a key/value pair array
 		$foo = preg_split("/\n(\S*):/", $headers, -1, PREG_SPLIT_DELIM_CAPTURE);
 		for ($i=1; $i<count($foo); $i++) {
-			$fullheaders[trim($foo[$i])] = iconv_mime_decode((trim($foo[$i+1])), 0, 'UTF-8');
+			$fullheaders[trim($foo[$i])] = iconv_mime_decode((trim($foo[$i+1])), 2, 'UTF-8');
 			$i++;
 		}
 
