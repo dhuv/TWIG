@@ -974,7 +974,7 @@ class TWIGEmails {
 				if(!$section) {
 					$sectiontmp = $pii;
 				} elseif($fooinfo["mimetype"] == "MULTIPART") {
-					$sectiontmp = ereg_replace("\.[0-9]*$", "", $section);
+					$sectiontmp = preg_replace("/\.[0-9]*$/", "", $section);
 					$sectiontmp = $sectiontmp . "." . $pii;
 				} else {
 					$sectiontmp = $section . "." . $pii;
